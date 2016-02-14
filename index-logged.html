@@ -79,6 +79,15 @@
 
                         <div class="navbar-collapse collapse" id="navigation">
 
+                            <ul class="nav navbar-nav navbar-left">
+                                <li>
+                                    <a href="my-profile.html" id="buy-nav">My Profile</a>
+                                </li>
+                                <li>
+                                    <a href="cart.html" id="buy-nav">Cart</a>
+                                </li>
+                            </ul>
+
                             <ul class="nav navbar-nav navbar-right">
                                 <li>
                                     <a href="#buy-section" id="buy-nav">Buy</a>
@@ -87,7 +96,7 @@
                                     <a href="#sell-section" id="sell-nav">Sell</a>
                                 </li>
                                 <li>
-                                    <a href="#" data-toggle="modal" data-target="#login-modal"><i class="fa fa-sign-in"></i> <span class="hidden-xs text-uppercase">Sign in</span></a>
+                                     <a href="index.html"><span class="hidden-xs text-uppercase">Sign out <i class="fa fa-sign-out"></i></span></a>
                                 </li>
 
                             </ul>
@@ -102,139 +111,6 @@
 
         </header>
 
-        <!-- *** LOGIN MODAL ***
-_________________________________________________________ -->
-
-        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="Login">Customer login</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form action="customer-orders.html" method="post">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="email_modal" placeholder="email">
-                            </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" id="password_modal" placeholder="password">
-                            </div>
-
-                            <p class="text-center">
-                                <a href="index-logged.html">
-                                    <button type="button" class="btn btn-template-main"><i class="fa fa-sign-in"></i> Log in</button>
-                                </a>
-                            </p>
-                                    
-                                
-                            <p class="text-center text-muted">Not registered yet?</p>
-                            <p class="text-center">
-                                <a data-toggle="modal" data-target="#signup-modal">
-                                    <button class="btn btn-template-main"><i class="fa fa-user"></i> Sign Up</button>
-                            </p>
-                        </form>
-
-                        <p class="text-center text-muted">Or use your social media account...</p>
-                        <center>   
-                            <p class="buttons">
-                                    <a href="#" class="btn btn-template-transparent-main"><i class="fa fa-facebook fa-lg"></i></a>
-                                    <a href="#" class="btn btn-template-transparent-main"><i class="fa fa-google-plus fa-lg"></i></a>
-                                    <a href="#" class="btn btn-template-transparent-main"><i class="fa fa-twitter fa-lg"></i></a>
-                            </p>
-                        </center>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" id="Login">Registration</h4>
-                    </div>
-                    <div class="modal-body">
-                        <form action="customer-orders.html" method="post">
-
-                            <div class="row">
-                                 <div class="col-md-2"></div>
-                                <div class="col-md-8">
-                                       
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="username" placeholder="Username">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="firstname" placeholder="Firstname"> 
-                                        </div>
-
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="lastname" placeholder="Lastname">
-                                        </div>
-
-                                </div>
-                            </div>
-                                <div class="row">
-                                    <div class="col-md-2"></div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <select class="form-control" id="state">
-                                                <option selected>City</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <select class="form-control" id="state">
-                                                <option selected>Country</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <!-- /.row -->
-                                <div class="row">
-                                    <div class="col-md-2"></div>
-                                    <div class="col-md-8">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="email" placeholder="E-mail">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-2"></div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="Password" placeholder="Password">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="R-Password" placeholder="Repeat password">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="row"> <div class="col-md-2"></div>
-                                <div class="col-md-8">
-                                    <p class="text-center">
-                                        <a href="index-logged.html">
-                                            <button type="button" class="btn btn-template-main"><i class="fa fa-user"></i> Sign Up</button>
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- *** LOGIN MODAL END *** -->
 
         <section>
             <!-- *** HOMEPAGE CAROUSEL ***
@@ -589,9 +465,9 @@ _________________________________________________________ -->
                         </div>
                         <div class="row">
                             <div class="col-sm-12 text-center" data-animate="fadeInUp">
-                                <a data-toggle="modal" data-target="#login-modal">
+                                <a href="product-detail.html">
                                     <button type="submit" class="btn btn-template-transparent-primary">Sell the product</button>
-                                </a>
+                                </a>                            
                             </div>
                         </div>
                     </div>
